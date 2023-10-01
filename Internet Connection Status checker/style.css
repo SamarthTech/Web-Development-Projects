@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d1c8c0, #c3c3a7);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 450px;
+    margin: 100px auto;
+    background-color: rgb(114, 110, 194);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 25px rgba(11, 11, 11, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.status {
+    background-color: #8f9c9c;
+    border-top: 5px solid #555;
+    border-bottom: 5px solid #555;
+    padding: 20px 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.status p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.status strong {
+    font-weight: bold;
+}
+
+#statusText {
+    font-size: 24px;
+}
+
+#IpAddressText,
+#networkstrengthText {
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
