@@ -1,0 +1,33 @@
+.sidebar{
+    width: 200px;
+    background-color: red;
+    display: grid;
+    justify-content: center;
+    position: fixed;
+}
+.logo{
+    height: 60px;
+}
+.navbar{
+    height: 100vh;
+}
+.navitem{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.navitem img{
+    height: 20px;
+}
+.navitem span{
+   margin-left: 6px;
+   vertical-align: middle;
+}
+.listItem{
+  margin: 10px 0px;  
+}
+.active {
+    color: blue ;
+}
+
