@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class="mx-auto col-6">
+  <form>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Search Customer</label>
+      <input name="search" type="text" class="form-control">
+      <br>
+      <button class="btn btn-primary offset-md-5">Submit</button>
+  </form>
+    </div>
+    
+</div>
+{% endif %}
+
+<div class="col-md-6 offset-md-2">
+  {% if user.is_authenticated %}
+  {% if records %}
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="table-primary">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Zipcode</th>
+        <th scope="col">Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% endif %}
+
+      {% if records %}
+      {% for record in records %}
+      <tr>
+        <td><a href="{% url 'record' record.id %}">{{ record.first_name }} {{ record.last_name }}</a></td>
+        <td>{{ record.email }}</td>
+        <td>{{ record.phone }}</td>
+        <td>{{ record.address }}</td>
+        <td>{{ record.city }}</td>
+        <td>{{ record.state }}</td>
+        <td>{{ record.zipcode }}</td>
+        <td>{{ record.created_at }}</td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <br>
+      <div class="col-md-6 offset-md-6">
+        <h4>No records found</h4>
+      </div>
+      
+
+      {% endif %}
+
+
+    </tbody>
+  </table>
+  {% else %}
+
+  <h1>Login</h1>
+  <br>
+
+  <form method="POST" action="{% url 'home' %}">
+    {% csrf_token %}
+    <form>
+      <div class="mb-3">
+
+        <input type="text" class="form-control" name="username" placeholder="User_Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+
+      <button type="submit" class="btn btn-secondary">Login</button>
+    </form>
+
+  </form>
+  
+
+
+
+</div>
+{% endif %}
+{% endblock %}
