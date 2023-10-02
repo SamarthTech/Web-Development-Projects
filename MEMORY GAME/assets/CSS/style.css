@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36096d;
+  background-image: linear-gradient(115deg, #36096d, #37d5d6);
+  gap: 80px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+button.start,
+
+button.restart {
+  border: 2px solid #ff0055;
+  outline: none;
+  padding: 20px 60px;
+  color: #37d5d6;
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #36096d;
+  cursor: pointer;
+}
+
+button.restart {
+  background-color: #ff0055;
+  border: 2px solid #36096d;
+}
+
+.controls > span {
+  padding: 30px;
+  color: #37d5d6;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #36096d;
+  border: 2px solid #ff0055;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.board.win {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #37d5d6;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #36096d;
+  border: 2px solid #ff0055;
+}
+
+.board.prevent-click {
+  pointer-events: none;
+}
+
+.board .card {
+  height: 200px;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.board .card .front {
+  background-color: #36096d;
+  line-height: 200px;
+}
+
+.board .card .front:before {
+  content: "";
+  background: url("../img/atom.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.board .card .back {
+  transform: rotateY(180deg);
+}
+
+.board .card .back img {
+  width: 100%;
+}
+
+.board .card .front,
+
+.board .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 2px solid #ff0055;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.board .card.flipped,
+
+.board .card.matched {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+select {
+  background-color: #36096d;
+  border: 2px solid #ff0055;
+  color: #37d5d6;
+  padding: 20px 30px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+}
