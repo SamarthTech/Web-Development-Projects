@@ -1,0 +1,17 @@
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 20px 0;
+}
