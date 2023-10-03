@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,100;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* max-width: 100vw;
+  max-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  background: rgb(15, 14, 51);
+}
+
+.container {
+  max-width: 40rem;
+  max-height: 40rem;
+  /* background: rgba(9, 86, 201, 0.7); */
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(24, 93, 187, 1) 73%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  border: 6px ridge rgb(13, 205, 219);
+  outline: solid black;
+}
+
+.head {
+  margin-top: 0.2rem;
+}
+
+h2 {
+  width: 100%;
+  font-family: "Courier New", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(rgba(11, 150, 214, 0.7), rgb(19, 16, 118));
+  padding: 0.6rem;
+  border-radius: 20px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+select {
+  width: 15rem;
+  height: 3rem;
+
+  background: rgba(8, 227, 205, 0.2);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(53, 5, 210) rgb(4, 36, 134);
+}
+
+textarea {
+  width: 300px;
+  height: 5rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+
+  border: thick double purple;
+}
+
+.btn-area {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+button {
+  width: 7rem;
+  height: 3rem;
+  margin: 0.8rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: rgb(45, 72, 224);
+  border: 5px outset rgb(19, 16, 118);
+  box-shadow: 5px 5px 5px rgb(9, 182, 213);
+}
+
+button:active {
+  transform: translateX(5px) translateY(5px);
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+footer {
+  width: 100%;
+  height: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(rgb(15, 14, 51), rgb(0, 0, 0));
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+span {
+  font-style: italic;
+}
