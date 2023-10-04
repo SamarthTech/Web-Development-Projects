@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Website icon" type="png" href="img/qr.png" />
+    <title>QR Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h2>QR Code Generator</h2>
+      </div>
+
+      <div class="center">
+        <select name="" id="size">
+          <option value="150">150x150</option>
+          <option value="200" selected>200x200</option>
+          <option value="250">250x250</option>
+          <option value="300">300x300</option>
+        </select>
+
+        <img id="qrImg" src="" alt="" />
+
+        <textarea
+          name=""
+          id="qrText"
+          cols="30"
+          rows="10"
+          placeholder="Enter your messege here"
+        ></textarea>
+      </div>
+
+      <div class="btn-area">
+        <button id="btn" type="submit" onclick="generateQR()">Generate</button>
+        <button id="reset-btn" type="submit" onclick="resetText()">
+          Reset All
+        </button>
+      </div>
+
+      <footer>
+        <p>Developed by <span>santanupal</span></p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
