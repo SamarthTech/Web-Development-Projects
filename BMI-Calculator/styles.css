@@ -1,0 +1,27 @@
+body {
+background-color : #212121;
+color : white;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
