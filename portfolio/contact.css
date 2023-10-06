@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+.contactform{
+    padding-top:144px; ;
+    padding:0 34px;
+    font-family:'Fira Sans', sans-serif;
+}
+
+.contactform h1{
+    font-family: 'Roboto Slab', serif;
+    text-align:center;
+
+}
+input#isClient {
+    margin-right: auto;
+}
