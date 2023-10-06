@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    font-family: monospace;
+    font-size: 20px;
+}
+.navbar{
+    height: 60px;
+    background-color: rgb(231, 16, 16);
+   
+}
+.logo{
+    color: white;
+    font-size: 30px;
+}
+a{
+    color: white;
+    
+     
+}
+
+body{
+    background-color: black; 
+    background-image: url(piza.jpg);
+    background-size:600px;
+    background-repeat: no-repeat;
+   
+}
+.menuu{
+    display: flex;
+    margin-left: 1000px;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+form{
+    margin-top:20px ;
+    margin-left: 800px;
+    color:  white;
+  
+
+ }
+ h2{
+    margin-left: 800px;
+    color: white;
+    margin-top: 20px;
+
+ }
+ button{
+    background-color: blueviolet;
+    color:white;
+    font-size: 15px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 12px;
+ }
+ input{
+    border-radius: 18px;
+    padding: 8px;
+ }
+ 
+    
+ 
