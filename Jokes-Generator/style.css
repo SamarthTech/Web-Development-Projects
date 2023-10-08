@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #111;
+    text-decoration: none;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 0.99rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: blue;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #00ffa2ae;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    width: 450px;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 1.1rem;
+    color: #00a8d6;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .joke-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-family: mulish, sans-serif;
+  }
+  
+  .new-joke-btn {
+    background-color: #f6ff00;
+    color: #111;
+  }
+  
+  .tweet-btn {
+    background-color: #00acee;
+  }
