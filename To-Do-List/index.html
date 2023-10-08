@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List 2023</title>
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Task List 2023</h1>
+        <form id="new-task-form" class="task-form">
+            <input
+                type="text"
+                name="new-task-input"
+                id="new-task-input"
+                placeholder="What do you have planned?" />
+            <input
+                type="text"
+                name="new-task-input-description"
+                id="new-task-input-description"
+                placeholder="Short description" />
+            <input
+                type="submit"
+                id="new-task-submit"
+                value="Add Task" />
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+
+            <div id="incomplete-tasks" class="task-section">
+                <h3>Incomplete Tasks</h3>
+            </div>
+
+            <div id="completed-tasks" class="task-section">
+                <h3>Completed Tasks</h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
