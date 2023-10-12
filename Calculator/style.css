@@ -7,19 +7,31 @@
   
   body {
     height: 100vh;
-    background: linear-gradient(to bottom, #f9544c 50%, #090c31 50%);
+    /* background: linear-gradient(to bottom, #710053 50%, #090c31 50%); */
+    background-color: #54005c;
+  }
+  h1{
+    background-color: #09006d;
+    text-align: center;
+    text-shadow: #010667;
+    color: #78acb7;
+    
+  }
+  .hr{
+    background-color: #010667;
+    color: #010667;
   }
   
   .calculator {
     width: 400px;
-    background-color: #15173c;
+    background-color: #000447;
     padding: 50px 30px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
   }
   
   .display {
@@ -60,13 +72,14 @@
   }
   
   .buttons input[type="button"]:hover {
-    box-shadow: 0 8px 25px #000d2e;
+    box-shadow: 0 8px 25px #1f439e;
     transform: scale(1.1);
+    background-color: #0a84a3;
   }
   
   input[type="button"]#equal {
     grid-row: span 2;
-    background-color: #f9544c;
+    background-color: #66006f;
     transition: all 0.2s ease-in-out;
   }
   
@@ -77,6 +90,75 @@
   
   input[type="button"][value="0"] {
     grid-column: span 2;
+    background-color: #523fc1;
+  }
+  input[type="button"][value="1"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="2"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="3"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="4"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="5"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="6"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="7"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="8"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="9"] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="."] {
+    
+    background-color: #523fc1;
+  }
+  input[type="button"][value="AC"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="DEL"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="/"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="*"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="-"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="+"] {
+    
+    background-color: #016275;
+  }
+  input[type="button"][value="AC"] {
+    
+    background-color: #016275;
   }
   
   .display {
