@@ -1,0 +1,89 @@
+
+ .thumbnail{
+    width:100%;
+   
+ }
+ 
+ .video-title{
+    margin-top:0;
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    margin-bottom:10px;
+ }
+ .video-author,
+ .video-stats{
+    font-size:12px;
+    color:rgb(96,96,96);
+ }
+ .video-author{
+    margin-bottom:4px;
+    
+ }
+ .video-info-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr ;
+
+ }
+ 
+ .profile-picture{
+    width:36px;
+    border-radius:50px;
+ }
+ .thumbnail-row{
+    margin-bottom:8px;
+    position:relative ;
+    
+ }
+ .video-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:40px;
+    cursor:pointer;
+   
+ }
+  @media (max-width:750px){
+   .video-grid{
+
+      grid-template-columns:1fr 1fr;
+   }
+  }
+  @media (min-width:751px) and (max-width:999px){
+    
+   .video-grid{
+
+      grid-template-columns:1fr 1fr 1fr ;
+   }
+  }
+
+  @media (min-width:1000px) {
+   .video-grid{
+
+      grid-template-columns:1fr 1fr 1fr 1fr;
+   }
+  }
+  
+ .video-time{
+    background-color:black;
+    font-family:Roboto,Arial;
+    font-size:12px;
+    font-weight:500;
+    color:white;
+    position:absolute;
+    padding:4px;
+    bottom:10px;
+    border-radius:2px;
+    right:8px;
+ }
+
+ .video-link{
+
+   color:black;
+   text-decoration:none;
+ }
+
+ .channel-link{
+   color:rgb(96,96,96);
+   text-decoration:none;
+ }
