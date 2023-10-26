@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.contact{
+    display: flex;
+}
+.contact::before{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.contact-left{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact-left p{
+    color: white;
+    font-size: 0.8rem;
+    font-family: cursive;
+    padding: 3px  3px;
+    margin: 3px 3px;
+}
+.contact-left i{
+    color: white;
+}
+.contact-right{
+    width: 60%;
+}
+.contact-right-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+}
+.contact-right-icons i{
+     font-size: 1rem;
+     color: white;
+     padding: 3px 3px;
+     margin: 3px 3px;
+}
+.navigation{
+    display: flex;
+}
+.navigation::before{
+    content: "  ";
+    background-color: rgba(0, 0, 0, 0.438);
+    position: absolute;
+    top:30px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: -1;
+    opacity: 0.6;
+}
+.navigation-left{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+.navigation-right{
+    width:  75% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+.navigation-left span{
+      font-size: 3.5rem;
+      color: crimson;
+      font-family: Dancing Script;
+}
+.navigation-left p{
+      font-size: 2.5rem;
+      color: white;
+      font-family: Dancing Script;
+}
+.navigation-right ul {
+      display: flex;
+    
+}
+.navigation ul li {
+      
+     list-style: none;
+      padding: 8px 8px;
+      margin: 2px 2px;
+}
+.navigation-right li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:  white;
+    font-family: Dancing Script;
+}
+.home{
+    display: flex;
+    padding: 25px 25px;
+    margin: 25px 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-text h1{
+    font-family: Dancing Script;
+    font-size: 3rem;
+    color: white;
+}
+.home-text h3{
+    font-family: Dancing Script;
+    font-size: 3rem;
+    color: white;
+}
+.home-text span{
+    font-family: Dancing Script;
+    font-size: 4rem;
+    color: white;
+}
+.reservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reservation::before{
+    content: " ";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: auto;
+    height: 20%;
+    width: 75%;
+    opacity: 0.7;
+    z-index: -1;
+}
+.name{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+.number{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+.date{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    padding: 5px 5px;
+     margin: 5px 4px;
+}
+.btn{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    padding: 5px 5px;
+     margin: 5px 4px;
+     font-family: Dancing Script;
+     background-color: orange;
+     font-size: 1.2rem;
+     color: crimson;
+}
+.reservation-inputs{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    margin: 2px 2px;
+}
