@@ -1,0 +1,129 @@
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-image: url(bodybackg.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+}
+#form{
+    display: inline-flex;
+    min-height: 500px;
+    max-height: 60vh;
+    min-width: 400px;
+    max-width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    background-color: #efefef;
+    border: 4px double #2c7da0;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 1rem #4c4c4c;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+}
+.formdetail{
+    min-height: fit-content;
+    max-height: max-content;
+    min-width: 18rem;
+    border: 2px solid #283e6f;
+    background-color: #283e6f;
+    /* flex-basis: 15vw; */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1.2rem;
+    border-radius: 0.25rem;
+}
+i{
+    min-width: 2.5rem;
+    max-width: fit-content;
+    color: #d4d4d4 ;
+    background-color:#283e6f;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin: 2.5px 0;
+}
+.input{
+    display: inline-block;
+    height: 2rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    border: 0;
+    box-shadow: 0;
+    background-color: #f0f8ff;
+    margin: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+    padding: 2px 5px;
+}
+#submitbtncontainer{
+    display: inline-block;
+    margin: 15vh 0 5vh 0;
+}
+#submitbtn{
+    display: inline-block;
+    height: 3rem;
+    width: 6rem;
+    color: rgb(67, 88, 109);
+    text-transform:uppercase;
+    font-size: 1.2rem;
+    background-color: #dadedf;
+    border: 2px solid rgb(67, 88, 109);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-family: 'OpenSans', sans-serif;
+}
+#submitbtn:hover:active{
+    background-color: rgb(67, 88, 109);
+    color: #dadedf;
+}
+
+
+/* For tablet */
+@media((max-width:900px)){
+    .formdetail{
+        width: 16rem;
+    }
+    .input{
+        width: 13rem;
+    }
+    i{
+        min-width: 2.5rem;
+    }
+}
+
+/* For mobile */
+@media(max-width:650px){
+    #form{
+        min-width: 350px;
+    }
+    #submitbtn{
+        height: 2rem;
+        min-width: 4.5rem;
+        max-width: max-content;
+        font-size: 1rem;
+    }
+    
+}
+@media(max-width:400px){
+    #form{
+        background-color: #f0f8ff00;
+        border: none;
+        box-shadow: none;
+    }
+}
