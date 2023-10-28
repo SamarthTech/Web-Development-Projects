@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d64e6;
+}
+
+.cont {
+  background: #f4f4f4;
+  padding: 3em 2.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  top: 50%;
+  left: 50%;
+
+  border-radius: 5px;
+  /*   box-shadow: 5px 10px 5px #dfdddd */
+}
+
+.find {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.5rem;
+}
+
+.find button {
+  font-size: 1rem;
+  color: #f4f4f4;
+  background-color: #3d64e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.find input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3d64e6;
+  color: #222a43;
+}
+
+.cont .flag {
+  display: block;
+  width: 45%;
+  min-width: 7.5rem;
+
+  margin: 1.8em auto 1.2em auto;
+}
+
+#output {
+  margin-top: 1.25em;
+}
+
+.cont h2 {
+  font-weight: 600;
+  color: #222a43;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+data-wrap {
+  margin-bottom: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.cont h4 {
+  font-weight: 400;
+  color: #222a43;
+  display: inline;
+}
+
+.cont span {
+  color: #5d6274;
+}
+
+.cont h3 {
+  text-align: center;
+}
