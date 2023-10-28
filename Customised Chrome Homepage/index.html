@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="searchbar"><div id="cursor">|</div></div>
+    <!-- cursor width working but not fitting properly in searchbar -->
+    
+    <img src="icons/Untitled-design.svg" alt="">
+    <div id="clock" title="Time kharab hai"></div>
+    <div id="navdivmargin"></div>
+    <div class="backg">
+        <!-- <div class="backtext">google</div> -->
+    </div>
+    <div id="shortcutbar">
+        
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: #899bab;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #899bab;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #899bab;"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100" >
+                    <div class="iconflex">
+                        <div class="iconcontainers" title="New Tab">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/newtab.png" alt="" class="icons" id="newtab">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Weather"> 
+                            <!-- https://weather.com/en-IN/weather/today -->
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/weather.webp" alt="" class="icons" style="height: 70px;width: 70px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers">
+                            <div class="sphericaliconcontainers" >
+                                <img src="icons/facebook.svg" alt="" class="icons" >
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Translate">
+                            <!-- https://translate.google.co.in -->
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/translate.png" alt="Translate" class="icons" style="height: 100px;width: 100px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="CSS Bootstrap">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/bootstrap.webp" alt="Bootstrap" class="icons" style="height: 70px;width: 70px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Stack Overflow">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(244, 127, 36);">
+                                <img src="icons/stackoverflow.png" alt="Stack Overflow" class="icons" style="height: 50px;width: 50px;object-fit: contain;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers">
+                            <div class="sphericaliconcontainers" title="ChatGPT AI">
+                                <img src="icons/ChatGPT_logo.svg.png" alt="ChatGPT" class="icons" style="height: 70px;width: 70px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="GitHub">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(33, 31, 31);">
+                                <img src="icons/github.png" alt="GitHub" class="icons" style="height: 68px;width: 72px;object-fit: cover;background-color: white;border-radius: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100">
+                    <div class="iconflex">
+                        <!-- <div class="iconcontainers">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/newtab.png" alt="" class="icons" id="newtab">
+                            </div>
+                        </div> -->
+                        <div class="iconcontainers" title="YouTube">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(255, 0, 0);">
+                                <img src="icons/youtube.png" alt="YouTube" class="icons" style="height: 55px;width: 55px;object-fit: contain;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Telegram">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/Telegram_(software)-Logo.wine.png" alt="Telegram" class="icons" style="height: 103px;width: 103px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="WhatsApp">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(79, 206, 93);">
+                                <img src="icons/WhatsApp.png" alt="WhatsApp" class="icons" style="height: 59px;width: 59px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Gmail">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/gmail.png" alt="Gmail" class="icons" style="height: 70px;width: 70px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Facebook">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(23, 120, 242)">
+                                <img src="icons/facebook.svg" alt="Facebook" class="icons" style="height: 90px;width: 90px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Instagram">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/instagram-512.webp" alt="Instagram" class="icons" style="height: 70px;width: 70px;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Spotify">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(30,215,96);">
+                                <img src="icons/spotify-logo.png" alt="Spotify" class="icons" style="height: 50px;width: 50px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="LinkedIn">
+                            <div class="sphericaliconcontainers" style="background-color: rgb(0,119,181);">
+                                <img src="icons/linkedin.webp" alt="LinkedIn" class="icons" style="height: 57px;width: 57px;object-fit: cover;border-radius: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100">
+                    <div class="iconflex">
+                        <div class="iconcontainers" title="Reddit">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/Reddit_Logo_Icon.svg.png" alt="Reddit" class="icons" style="height: 70px;width: 70px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                        <div class="iconcontainers" title="Amazon">
+                            <div class="sphericaliconcontainers">
+                                <img src="icons/Amazon_icon.svg.png" alt="Amazon" class="icons" style="height: 50px;object-fit: contain;border-radius: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        
+    </div>
+    <button class="arrowbutton" title="Search"><img src="icons/right-arrow.svg" alt="" class="btnimg"><img src="icons/magnifying-glass (1).svg" alt="" class="btnimg" ></button>
+    
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="icons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
