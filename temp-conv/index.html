@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        *{
+            margin: 0;
+            font-family: monospace;
+            font-size: 20px;
+        }
+        body{
+            background-color: #FFB000;
+        }
+        .content{
+            margin: 200px;
+            background-color: #F1EFEF;
+            border: 1px solid #004225;
+            border-radius: 10px;
+            padding: 100px;
+        }
+        input{
+            padding: 6px;
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 10px;
+            background-color: #610C9F;
+            color: #fff;
+            margin-top: 15px;
+        }
+        select{
+            border-radius: 10px;
+            background-color: #940B92;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" >
+        <span>enter temperature :</span><input type="number" id="val">
+        <select name="select unit" id="sct">
+            <option value="celsius">celsius</option>
+            <option value="fahrenheit">fahrenheit</option>
+        </select>
+        <br>
+        <button onclick="convert()">Convert</button>
+
+         <span id="res"></span>
+    </div>
+</body>
+</html>
