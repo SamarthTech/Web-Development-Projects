@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #1F4172;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        img{
+            width: 200px;
+            height : 200px;
+        }
+
+        .main-div{
+            margin: 300px;
+            margin-left: 400px;
+        }
+
+        .content{
+            margin-left: 250px;
+        }
+        h1{
+            margin-left: 180px;
+        }
+
+        button{
+            padding: 12px;
+            background-color: #9400FF;
+            color: #fff;
+            border: 1px solid #1F4172;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <h1>Can you turn the bulb on?</h1>
+        <div class="content">
+        <button onclick="document.getElementById('off').src = 'images/png-clipart-light-bulb-illustration-incandescent-light-bulb-lamp-cartoon-light-switch-light-fixture-text-removebg-preview.png'">turn on</button>
+        <img src="images/png-transparent-incandescent-light-bulb-lamp-open-turn-off-white-lantern-text-removebg.png" alt="" id="off">
+        <button onclick="document.getElementById('off').src = 'images/png-transparent-incandescent-light-bulb-lamp-open-turn-off-white-lantern-text-removebg.png'">turn off</button>
+    </div>
+    </div>
+
+   
+</body>
+</html>
