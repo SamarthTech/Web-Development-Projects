@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #e7e7e7;
+  margin:0% 5% 0% 5%;
+}
+.button {
+  background-color: #ffaa42;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.button:hover {
+  background-color: rgb(162, 255, 0);
+  color: #ffaa42;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.footer {
+  padding: 8px 15px;
+  display: grid;
+}
+.title{
+  font-weight: 700;
+}
+.network{
+  font-size: 500;
+}
+.allshows{
+  display: flex;
+  flex-wrap: wrap;
+}
+.showCard{
+  margin: 20px;
+}
